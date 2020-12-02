@@ -1,0 +1,23 @@
+export default {
+    namespaced:true,
+    state:{
+        userInfo:{
+            username:'',
+            token:''
+        }
+    },
+    mutations:{
+        setUserInfo(state,obj){
+            state.userInfo={
+                username:obj.username,
+                token:obj.token
+            }
+        },
+        setLogout(state){
+            state.userInfo={
+                username:'',
+                token:''
+            }
+        }
+    }
+}
